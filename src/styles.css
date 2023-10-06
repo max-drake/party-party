@@ -28,4 +28,86 @@ h6 {
 
 #app {
   padding: 1rem;
+  /* width: vw; */
+  /* height: 100vh; */
+}
+
+#messages_box {
+  width: 90vw;
+  height: 80vh;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+
+.chat_message {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0px 8px;
+  
+}
+
+#text_input_box {
+  width: 90vw;
+  /* height: 5rem; */
+  /* border: 1px solid #ccc; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0px;
+}
+
+.generic_text_input {
+  /* transition: 0.3s; */
+  border: 1px solid #ccc;
+  /* padding: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+#text_field {
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(222, 124, 224,0.3);
+  transition: 0.3s;
+  height: 30px;
+  /* width: 100%; */
+  flex-grow: 1;
+}
+
+#text_field:focus {
+  box-shadow: 0 8px 16px 0 rgba(36, 144, 86, 0.4);
+  border-color: #7ce097;
+  transform: scale(1.01);
+  margin: 0 10px;
+}
+
+.generic_button {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border: 1px solid #ccc;
+  padding: 8px 20px;
+
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+#send_button {
+  height: 42px;
+  width: 86px;
+  background-color: #7ce097;
 }
